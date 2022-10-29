@@ -22,6 +22,5 @@ public class Director extends Approver {
         }
 
         System.out.println("Purchase with id " + id + " needs approval from higher position than Director.");
-        next.approve(id, cost, type);
     }
 }

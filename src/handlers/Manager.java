@@ -13,6 +13,5 @@ public class Manager extends Approver {
         }
 
         System.out.println("Purchase with id " + id + " needs approval from higher position than Manager.");
-        next.approve(id, cost, type);
     }
 }

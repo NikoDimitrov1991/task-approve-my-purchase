@@ -9,6 +9,6 @@ public class President extends Approver {
     @Override
     public void approve(int id, double cost, Type type) {
 
-        next.approve(id, cost, type);
+
     }
 }
