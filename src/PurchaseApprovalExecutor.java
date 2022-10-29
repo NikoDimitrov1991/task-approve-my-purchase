@@ -18,10 +18,11 @@ public class PurchaseApprovalExecutor {
         director.approve(1,400,Type.CONSUMABLES);
         director.approve(2,500,Type.CONSUMABLES);
         director.approve(3,600,Type.CONSUMABLES);
-//        manager.approve(1, 15000, Type.CONSUMABLES);
-//        manager.approve(2, 5000, Type.PC);
-//        manager.approve(3, 5000, Type.PC);
-//        manager.approve(4, 3000, Type.CLERICAL);
+        System.out.println(" ");
+        manager.approve(4, 15000, Type.CONSUMABLES);
+        manager.approve(5, 5000, Type.PC);
+        manager.approve(6, 5000, Type.PC);
+        manager.approve(7, 3000, Type.CLERICAL);
 
     }
 }
