@@ -20,44 +20,32 @@ public abstract class Approver {
             case CONSUMABLES:
                 if (cost <= this.purchaseLimitsPerRole.get(Type.CONSUMABLES)) {
                     result = true;
-                    return result;
-                } else {
-                    break;
                 }
+                    break;
             case CLERICAL:
                 if (cost <= this.purchaseLimitsPerRole.get(Type.CLERICAL)) {
                     result = true;
-                    return result;
-                } else {
-                    break;
                 }
+                    break;
             case GADGETS:
                 if (cost <= this.purchaseLimitsPerRole.get(Type.GADGETS)) {
                     result = true;
-                    return result;
-                } else {
-                    break;
                 }
+                    break;
             case GAMING:
                 if (cost <= this.purchaseLimitsPerRole.get(Type.GAMING)) {
                     result = true;
-                    return result;
-                } else {
-                    break;
                 }
+                    break;
             case PC:
                 if (cost <= this.purchaseLimitsPerRole.get(Type.PC)) {
                     result = true;
-                    return result;
-                } else {
-                    break;
                 }
+                    break;
             default:
                 result = false;
-                return result;
         }
         return result;
-
 }
     /**
      * Method used for registering next approver level.
