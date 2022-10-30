@@ -1,4 +1,5 @@
 package handlers;
+
 import common.Type;
 
 
@@ -7,13 +8,14 @@ import common.Type;
  */
 public class Director extends Approver {
 
-    public Director (){
-        purchaseLimitsPerRole.put(Type.CONSUMABLES,500);
-        purchaseLimitsPerRole.put(Type.CLERICAL,1000);
-        purchaseLimitsPerRole.put(Type.GADGETS,1500);
-        purchaseLimitsPerRole.put(Type.GAMING,3500);
-        purchaseLimitsPerRole.put(Type.PC,6000);
+    public Director() {
+        purchaseLimitsPerRole.put(Type.CONSUMABLES, 500);
+        purchaseLimitsPerRole.put(Type.CLERICAL, 1000);
+        purchaseLimitsPerRole.put(Type.GADGETS, 1500);
+        purchaseLimitsPerRole.put(Type.GAMING, 3500);
+        purchaseLimitsPerRole.put(Type.PC, 6000);
     }
+
     @Override
     public void approve(int id, double cost, Type type) {
         if (CANAPPROVE(cost, type)) {

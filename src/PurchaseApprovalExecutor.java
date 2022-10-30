@@ -19,9 +19,9 @@ public class PurchaseApprovalExecutor {
         ApprovalChainGenerator.generate(vicePresident);
         System.out.println(" ");
         System.out.println("Requests for Director:");
-        director.approve(1,400,Type.CONSUMABLES);
-        director.approve(2,500,Type.CONSUMABLES);
-        director.approve(3,600,Type.CONSUMABLES);
+        director.approve(1, 400, Type.CONSUMABLES);
+        director.approve(2, 500, Type.CONSUMABLES);
+        director.approve(3, 600, Type.CONSUMABLES);
         System.out.println(" ");
         System.out.println("Requests for Manager:");
         manager.approve(4, 15000, Type.CONSUMABLES);
@@ -30,15 +30,15 @@ public class PurchaseApprovalExecutor {
         manager.approve(7, 3000, Type.CLERICAL);
         System.out.println(" ");
         System.out.println("Requests for President:");
-        president.approve(8,6000,Type.GADGETS);
-        president.approve(9,1000,Type.GAMING);
-        president.approve(10,2000,Type.CLERICAL);
-        president.approve(11,4000,Type.GAMING);
+        president.approve(8, 6000, Type.GADGETS);
+        president.approve(9, 1000, Type.GAMING);
+        president.approve(10, 2000, Type.CLERICAL);
+        president.approve(11, 4000, Type.GAMING);
         System.out.println(" ");
         System.out.println("Requests for Vice President:");
-        vicePresident.approve(12,6500, Type.PC);
-        vicePresident.approve(13,4400, Type.GAMING);
-        vicePresident.approve(14,701, Type.CONSUMABLES);
-        vicePresident.approve(15,3900, Type.GADGETS);
+        vicePresident.approve(12, 6500, Type.PC);
+        vicePresident.approve(13, 4400, Type.GAMING);
+        vicePresident.approve(14, 701, Type.CONSUMABLES);
+        vicePresident.approve(15, 3900, Type.GADGETS);
     }
 }
