@@ -2,9 +2,6 @@ package handlers;
 
 import common.Type;
 
-/**
- * //TODO - Implement approval implementation for President level
- */
 public class President extends Approver {
     public President() {
         setPurchaseLimitsPerRole(Type.CONSUMABLES, 1000);

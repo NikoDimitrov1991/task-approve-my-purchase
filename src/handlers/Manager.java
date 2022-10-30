@@ -2,9 +2,7 @@ package handlers;
 
 import common.Type;
 
-/**
- * //TODO - If needed, validate logic and if possible optimize code
- */
+
 public class Manager extends Approver {
     public Manager() {
         setPurchaseLimitsPerRole(Type.CONSUMABLES, 300);

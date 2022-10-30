@@ -3,9 +3,6 @@ package handlers;
 import common.Type;
 
 
-/**
- * //TODO - Implement approval implementation for VicePresident level
- */
 public class VicePresident extends Approver {
     public VicePresident() {
         setPurchaseLimitsPerRole(Type.CONSUMABLES, 700);
