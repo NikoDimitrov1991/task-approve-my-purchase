@@ -1,19 +1,19 @@
 package handlers;
 
-import common.Type;
+import common.CategoryType;
 
 
 public class Manager extends Approver {
     public Manager() {
-        setPurchaseLimitsPerRole(Type.CONSUMABLES, 300);
-        setPurchaseLimitsPerRole(Type.CLERICAL, 500);
-        setPurchaseLimitsPerRole(Type.GADGETS, 1000);
-        setPurchaseLimitsPerRole(Type.GAMING, 3000);
-        setPurchaseLimitsPerRole(Type.PC, 5000);
+        setPurchaseLimitsPerRole(CategoryType.CONSUMABLES, 300);
+        setPurchaseLimitsPerRole(CategoryType.CLERICAL, 500);
+        setPurchaseLimitsPerRole(CategoryType.GADGETS, 1000);
+        setPurchaseLimitsPerRole(CategoryType.GAMING, 3000);
+        setPurchaseLimitsPerRole(CategoryType.PC, 5000);
     }
 
     @Override
-    public void approve(int id, double cost, Type type) {
+    public void approve(int id, double cost, CategoryType type) {
         if (CANAPPROVE(cost, type)) {
             System.out.println("Manager approved purchase with id " + id + " that costs " + cost);
             return;

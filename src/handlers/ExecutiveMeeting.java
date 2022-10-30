@@ -1,6 +1,6 @@
 package handlers;
 
-import common.Type;
+import common.CategoryType;
 
 /**
  * Used as a fallback in approval chain.
@@ -15,7 +15,7 @@ public class ExecutiveMeeting extends Approver {
     }
 
     @Override
-    public void approve(int id, double cost, Type type) {
+    public void approve(int id, double cost, CategoryType type) {
 
         System.out.println("Purchase with id " + id + " that costs " + cost + " requires an approval of executive meeting.");
     }

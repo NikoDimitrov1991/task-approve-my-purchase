@@ -1,4 +1,4 @@
-import common.Type;
+import common.CategoryType;
 import handlers.*;
 
 /**
@@ -19,26 +19,26 @@ public class PurchaseApprovalExecutor {
         ApprovalChainGenerator.generate(vicePresident);
         System.out.println(" ");
         System.out.println("Requests for Director:");
-        director.approve(1, 400, Type.CONSUMABLES);
-        director.approve(2, 500, Type.CONSUMABLES);
-        director.approve(3, 600, Type.CONSUMABLES);
+        director.approve(1, 400, CategoryType.CONSUMABLES);
+        director.approve(2, 500, CategoryType.CONSUMABLES);
+        director.approve(3, 600, CategoryType.CONSUMABLES);
         System.out.println(" ");
         System.out.println("Requests for Manager:");
-        manager.approve(4, 15000, Type.CONSUMABLES);
-        manager.approve(5, 5000, Type.PC);
-        manager.approve(6, 5000, Type.PC);
-        manager.approve(7, 3000, Type.CLERICAL);
+        manager.approve(4, 15000, CategoryType.CONSUMABLES);
+        manager.approve(5, 5000, CategoryType.PC);
+        manager.approve(6, 5000, CategoryType.PC);
+        manager.approve(7, 3000, CategoryType.CLERICAL);
         System.out.println(" ");
         System.out.println("Requests for President:");
-        president.approve(8, 6000, Type.GADGETS);
-        president.approve(9, 1000, Type.GAMING);
-        president.approve(10, 2000, Type.CLERICAL);
-        president.approve(11, 4000, Type.GAMING);
+        president.approve(8, 6000, CategoryType.GADGETS);
+        president.approve(9, 1000, CategoryType.GAMING);
+        president.approve(10, 2000, CategoryType.CLERICAL);
+        president.approve(11, 4000, CategoryType.GAMING);
         System.out.println(" ");
         System.out.println("Requests for Vice President:");
-        vicePresident.approve(12, 6500, Type.PC);
-        vicePresident.approve(13, 4400, Type.GAMING);
-        vicePresident.approve(14, 701, Type.CONSUMABLES);
-        vicePresident.approve(15, 3900, Type.GADGETS);
+        vicePresident.approve(12, 6500, CategoryType.PC);
+        vicePresident.approve(13, 4400, CategoryType.GAMING);
+        vicePresident.approve(14, 701, CategoryType.CONSUMABLES);
+        vicePresident.approve(15, 3900, CategoryType.GADGETS);
     }
 }

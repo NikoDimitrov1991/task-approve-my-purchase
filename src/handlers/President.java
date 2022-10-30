@@ -1,18 +1,18 @@
 package handlers;
 
-import common.Type;
+import common.CategoryType;
 
 public class President extends Approver {
     public President() {
-        setPurchaseLimitsPerRole(Type.CONSUMABLES, 1000);
-        setPurchaseLimitsPerRole(Type.CLERICAL, 2000);
-        setPurchaseLimitsPerRole(Type.GADGETS, 3000);
-        setPurchaseLimitsPerRole(Type.GAMING, 5000);
-        setPurchaseLimitsPerRole(Type.PC, 8000);
+        setPurchaseLimitsPerRole(CategoryType.CONSUMABLES, 1000);
+        setPurchaseLimitsPerRole(CategoryType.CLERICAL, 2000);
+        setPurchaseLimitsPerRole(CategoryType.GADGETS, 3000);
+        setPurchaseLimitsPerRole(CategoryType.GAMING, 5000);
+        setPurchaseLimitsPerRole(CategoryType.PC, 8000);
     }
 
     @Override
-    public void approve(int id, double cost, Type type) {
+    public void approve(int id, double cost, CategoryType type) {
         if (CANAPPROVE(cost, type)) {
             System.out.println("President approved purchase with id " + id + " that costs " + cost);
             return;

@@ -1,5 +1,5 @@
 package common;
 
-public enum Type {
+public enum CategoryType {
     CONSUMABLES, CLERICAL, GADGETS, GAMING, PC
 }
