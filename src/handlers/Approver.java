@@ -6,10 +6,12 @@ import java.util.Hashtable;
 
 public abstract class Approver {
 
-    protected Hashtable<Type, Integer> purchaseLimitsPerRole = new Hashtable<>();
-
-
     protected Approver next;
+    private Hashtable<Type, Integer> purchaseLimitsPerRole = new Hashtable<>();
+
+    public void setPurchaseLimitsPerRole(Type consumableRole, Integer priceLimit) {
+        this.purchaseLimitsPerRole.put(consumableRole, priceLimit);
+    }
 
     /**
      * If needed, be free to change signature of abstract methods.

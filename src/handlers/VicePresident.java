@@ -8,11 +8,11 @@ import common.Type;
  */
 public class VicePresident extends Approver {
     public VicePresident() {
-        purchaseLimitsPerRole.put(Type.CONSUMABLES, 700);
-        purchaseLimitsPerRole.put(Type.CLERICAL, 1500);
-        purchaseLimitsPerRole.put(Type.GADGETS, 2000);
-        purchaseLimitsPerRole.put(Type.GAMING, 4500);
-        purchaseLimitsPerRole.put(Type.PC, 6500);
+        setPurchaseLimitsPerRole(Type.CONSUMABLES, 700);
+        setPurchaseLimitsPerRole(Type.CLERICAL, 1500);
+        setPurchaseLimitsPerRole(Type.GADGETS, 2000);
+        setPurchaseLimitsPerRole(Type.GAMING, 4500);
+        setPurchaseLimitsPerRole(Type.PC, 6500);
     }
 
     @Override

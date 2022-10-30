@@ -7,11 +7,11 @@ import common.Type;
  */
 public class President extends Approver {
     public President() {
-        purchaseLimitsPerRole.put(Type.CONSUMABLES, 1000);
-        purchaseLimitsPerRole.put(Type.CLERICAL, 2000);
-        purchaseLimitsPerRole.put(Type.GADGETS, 3000);
-        purchaseLimitsPerRole.put(Type.GAMING, 5000);
-        purchaseLimitsPerRole.put(Type.PC, 8000);
+        setPurchaseLimitsPerRole(Type.CONSUMABLES, 1000);
+        setPurchaseLimitsPerRole(Type.CLERICAL, 2000);
+        setPurchaseLimitsPerRole(Type.GADGETS, 3000);
+        setPurchaseLimitsPerRole(Type.GAMING, 5000);
+        setPurchaseLimitsPerRole(Type.PC, 8000);
     }
 
     @Override

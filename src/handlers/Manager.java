@@ -7,11 +7,11 @@ import common.Type;
  */
 public class Manager extends Approver {
     public Manager() {
-        purchaseLimitsPerRole.put(Type.CONSUMABLES, 300);
-        purchaseLimitsPerRole.put(Type.CLERICAL, 500);
-        purchaseLimitsPerRole.put(Type.GADGETS, 1000);
-        purchaseLimitsPerRole.put(Type.GAMING, 3000);
-        purchaseLimitsPerRole.put(Type.PC, 5000);
+        setPurchaseLimitsPerRole(Type.CONSUMABLES, 300);
+        setPurchaseLimitsPerRole(Type.CLERICAL, 500);
+        setPurchaseLimitsPerRole(Type.GADGETS, 1000);
+        setPurchaseLimitsPerRole(Type.GAMING, 3000);
+        setPurchaseLimitsPerRole(Type.PC, 5000);
     }
 
     @Override
